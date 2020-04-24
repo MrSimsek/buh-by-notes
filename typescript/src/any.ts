@@ -6,4 +6,5 @@ let prettySure: number = 5;
 prettySure.toFixed(); // this is safe
 
 let list: any[] = [1, true, 'free'];
+let secondList: any[] = [1, true, 'free'];
 list[1] = 100;
