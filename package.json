@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "./node_modules/.bin/prettier --write './**/*.{ts,js,css,json}'",
-    "precommit": "lint-staged"
+    "prettier": "prettier --write './**/*.{ts,js,css,json}'"
   },
   "lint-staged": {
     "*.{ts,js,css,son}": [
-      "./node_modules/.bin/prettier --write",
+      "prettier --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "keywords": [],
   "author": "",
