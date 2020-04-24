@@ -6,7 +6,6 @@ interface Person {
 
 let deniz: Person = {
   name: 'Deniz',
-
   age: 27,
   isMarried: false,
   //   thisPropertyNotInInterface: 'This will give error'
